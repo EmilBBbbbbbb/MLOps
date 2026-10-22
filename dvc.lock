@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  process_data:
+    cmd: uv run .\src\mlops\process.py
+    deps:
+    - path: .\data\input.csv
+      hash: md5
+      md5: 2309cc5f04782ed9bb6016d9f4e381cf
+      size: 61194
+    - path: .\src\mlops\process.py
+      hash: md5
+      md5: 18213944673f9338e7667b5b7e54de44
+      size: 749
+    outs:
+    - path: .\output\result.csv
+      hash: md5
+      md5: 9b8ce648c09ee69acdb94f2d8a74a2fe
+      size: 71880
