@@ -8,7 +8,9 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "dvc>=3.67.1",
     "numpy>=2.5.4",
+    "pandas>=3.1.0",
 ]
 
 [project.scripts]
